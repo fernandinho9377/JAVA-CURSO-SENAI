@@ -2,7 +2,7 @@
 // 01 criar a váriavel
 xhttp = new XMLHttpRequest();
 var lista;
-var api = "https://prj-produtos-java.herokuapp.com/api/usuario/";
+var api = "https://qua-209050.herokuapp.com/api/usuario/";
 
 function listar() {
     // 02 definição do nosso request (forma e endereço)
@@ -36,6 +36,7 @@ function gravar() {
     //alert("Estamos dentro da function incluir");
     var usuario = {};
     usuario.nome = document.getElementById("nome").value;
+    usuario.email = document.getElementById("email").value;
     // console.log(usuario);
 
     usuario.id = document.getElementById("id").value;
